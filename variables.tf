@@ -1,12 +1,12 @@
 variable client_id {
-  default = ""
+  default = "b1a3d76d-7596-4427-a613-47240c9c5e5f"
 }
 variable client_secret {
-  default = ""
+  default = "S-sT3O8TrFw4e--h7lxF68gBkbMX5jdq~e"
 }
 
-variable subscription_id {}
-variable tenant_id {}
+variable subscription_id {4cdeb3fc-4431-4652-89bb-9508ae7eff95}
+variable tenant_id {72f988bf-86f1-41af-91ab-2d7cd011db47}
 
 variable use_msi {
   description = "Use Managed Identity for Authentication (Azure VMs only)"
@@ -23,7 +23,7 @@ variable "iac_tooling" {
 variable "partner_id" {
   description = "A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution"
   type        = string
-  default     = "5d27f3ae-e49c-4dea-9aa3-b44e4750cd8c"
+  default     = "cbc371cc-5052-479b-b48e-51bb779545e4"
 }
 
 variable "prefix" {
@@ -37,7 +37,7 @@ variable "prefix" {
 }
 variable "location" {
   description = "The Azure Region to provision all resources in this script"
-  default     = "East US"
+  default     = "West Europe"
 }
 
 variable "ssh_public_key" {
@@ -116,7 +116,7 @@ variable "aks_network_plugin" {
 variable "aks_network_policy" {
   description = "Sets up network policy to be used with Azure CNI. Network policy allows us to control the traffic flow between pods. Currently supported values are calico and azure. Changing this forces a new resource to be created."
   type        = string
-  default     = "azure"
+  default     = "calico"
   #TODO: add validation
 }
 
