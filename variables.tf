@@ -396,7 +396,7 @@ variable node_pools {
 
   default = {
     cas = {
-      "machine_type" = "Standard_E16s_v3"
+      "machine_type" = "Standard_D8s_v3"
       "os_disk_size" = 200
       "min_nodes"    = 0
       "max_nodes"    = 5
@@ -407,7 +407,7 @@ variable node_pools {
       }
     },
     compute = {
-      "machine_type" = "Standard_E16s_v3"
+      "machine_type" = "Standard_D8s_v3"
       "os_disk_size" = 200
       "min_nodes"    = 0
       "max_nodes"    = 5
@@ -419,7 +419,7 @@ variable node_pools {
       }
     },
     connect = {
-      "machine_type" = "Standard_E16s_v3"
+      "machine_type" = "Standard_D8s_v3"
       "os_disk_size" = 200
       "min_nodes"    = 0
       "max_nodes"    = 5
@@ -431,7 +431,7 @@ variable node_pools {
       }
     },
     stateless = {
-      "machine_type" = "Standard_D16s_v3"
+      "machine_type" = "Standard_D8s_v3"
       "os_disk_size" = 200
       "min_nodes"    = 0
       "max_nodes"    = 5
